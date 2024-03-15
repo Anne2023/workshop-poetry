@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "workshop-amabile"
+version = "0.1.0"
+description = ""
+authors = ["Amábile <amabile.analistadesistemas@gmail.com>"]
+readme = "README.md"
+packages = [{include = "workshop-poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gerar_desculpas_para_faltar_aula = "workshop-poetry.main:gerar_desculpas_para_faltar_aula_do_gabriel_cli"
